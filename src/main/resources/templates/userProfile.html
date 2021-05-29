@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>One Stop Erie - Top Dollar For Your Electronics</title>
+</head>
+<body>
+<h1>Current Users/Listings</h1>
+<div th:each="user:${allUsersModel}">
+    <p th:text="'User Name: ' + ${ user.userName}"></p>
+    <p th:text="'Zip Code: ' + ${ user.zipCode}"></p>
+    <p th:text="'Items Listed: ' + ${ user.itemsOwned.toString}"></p>
+<div th:each=""></div>
+</div>
+</body>
+<footer><small>&copy One Stop Erie 2021</small></footer>
+</html>
